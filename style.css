@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    padding: 50px;
+}
+
+div {
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.make-red {
+    background-color: red;
+}
+
+.make-blue {
+    background-color: blue;
+}
+
+.make-green {
+    background-color: green;
+}
