@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 main {
@@ -15,14 +15,18 @@ div {
     border: 1px solid black;
 }
 
-.make-red {
+.player-one {
+    background-color: orange;
+}
+
+.player-two {
+    background-color: pink;
+}
+
+.player-one-wins {
     background-color: red;
 }
 
-.make-blue {
-    background-color: blue;
-}
-
-.make-green {
-    background-color: green;
+.player-two-wins {
+    background-color: purple;
 }

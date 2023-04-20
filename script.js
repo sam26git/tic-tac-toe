@@ -1,91 +1,96 @@
+// var storing the main tag (divs container)
+// counter variable to keep track of player turn
+// event listener to listen for a click on mainTag
+// event.target to target a single div
+// if the tagNamae is 'DIV' continue
+// if playerTurn counter modulo 2 === 0 it's player 1 turn (red) else player 2 turn (blue)
+// increase counter variable to change turn after a click
 var mainTag = document.querySelector('main');
-
-// make every second click add a different class
-// add loop inside event lisenter to check for every second click, if 1 red, if 2 blue.
-
+var playerTurn = 0;
 mainTag.addEventListener('click', function(event) {
     var singleDiv = event.target;
     if (singleDiv.tagName === 'DIV') {
-        singleDiv.className = 'make-red';
+        if ( playerTurn % 2 === 0 ) {
+            singleDiv.className = 'player-one';
+        } else {
+            singleDiv.className = 'player-two';
+        }
+        playerTurn++;
     }
 
+
+    
+
+// var to find all the divs on the page
+// if 3 in a row for either colour that player wins
     var allDivs = document.querySelectorAll('div');
-    var divOne = document.querySelectorAll('div')[0];
-    var divTwo = document.querySelectorAll('div')[1];
-    var divThree = document.querySelectorAll('div')[2];
-    var divFour = document.querySelectorAll('div')[3];
-    var divFive = document.querySelectorAll('div')[4];
-    var divSix = document.querySelectorAll('div')[5];
-    var divSeven = document.querySelectorAll('div')[6];
-    var divEight = document.querySelectorAll('div')[7];
-    var divNine = document.querySelectorAll('div')[8];
 
-    if (divOne.className === 'make-red' && divTwo.className === 'make-red' && divThree.className === 'make-red') {
-        divOne.className = 'make-green';
-        divTwo.className = 'make-green';
-        divThree.className = 'make-green';
-    } else if (divFour.className === 'make-red' && divFive.className === 'make-red' && divSix.className === 'make-red') {
-        divFour.className = 'make-green';
-        divFive.className = 'make-green';
-        divSix.className = 'make-green';
-    } else if (divSeven.className === 'make-red' && divEight.className === 'make-red' && divNine.className === 'make-red') {
-        divSeven.className = 'make-green';
-        divEight.className = 'make-green';
-        divNine.className = 'make-green';
-    } else if (divOne.className === 'make-red' && divFour.className === 'make-red' && divSeven.className === 'make-red') {
-        divOne.className = 'make-green';
-        divFour.className = 'make-green';
-        divSeven.className = 'make-green';
-    } else if (divTwo.className === 'make-red' && divFive.className === 'make-red' && divEight.className === 'make-red') {
-        divTwo.className = 'make-green';
-        divFive.className = 'make-green';
-        divEight.className = 'make-green';
-    } else if (divThree.className === 'make-red' && divSix.className === 'make-red' && divNine.className === 'make-red') {
-        divThree.className = 'make-green';
-        divSix.className = 'make-green';
-        divNine.className = 'make-green';
-    } else if (divOne.className === 'make-red' && divFive.className === 'make-red' && divNine.className === 'make-red') {
-        divOne.className = 'make-green';
-        divFive.className = 'make-green';
-        divNine.className = 'make-green';
-    } else if (divThree.className === 'make-red' && divFive.className === 'make-red' && divSeven.className === 'make-red') {
-        divThree.className = 'make-green';
-        divFive.className = 'make-green';
-        divSeven.className = 'make-green';
+    if (allDivs[0].className === 'player-one' && allDivs[1].className === 'player-one' && allDivs[2].className === 'player-one') {
+        allDivs[0].className = 'player-one-wins';
+        allDivs[1].className = 'player-one-wins';
+        allDivs[2].className = 'player-one-wins';
+    } else if (allDivs[3].className === 'player-one' && allDivs[4].className === 'player-one' && allDivs[5].className === 'player-one') {
+        allDivs[3].className = 'player-one-wins';
+        allDivs[4].className = 'player-one-wins';
+        allDivs[5].className = 'player-one-wins';
+    } else if (allDivs[6].className === 'player-one' && allDivs[7].className === 'player-one' && allDivs[8].className === 'player-one') {
+        allDivs[6].className = 'player-one-wins';
+        allDivs[7].className = 'player-one-wins';
+        allDivs[8].className = 'player-one-wins';
+    } else if (allDivs[0].className === 'player-one' && allDivs[3].className === 'player-one' && allDivs[6].className === 'player-one') {
+        allDivs[0].className = 'player-one-wins';
+        allDivs[3].className = 'player-one-wins';
+        allDivs[6].className = 'player-one-wins';
+    } else if (allDivs[1].className === 'player-one' && allDivs[4].className === 'player-one' && allDivs[7].className === 'player-one') {
+        allDivs[1].className = 'player-one-wins';
+        allDivs[4].className = 'player-one-wins';
+        allDivs[7].className = 'player-one-wins';
+    } else if (allDivs[2].className === 'player-one' && allDivs[5].className === 'player-one' && allDivs[8].className === 'player-one') {
+        allDivs[2].className = 'player-one-wins';
+        allDivs[5].className = 'player-one-wins';
+        allDivs[8].className = 'player-one-wins';
+    } else if (allDivs[0].className === 'player-one' && allDivs[4].className === 'player-one' && allDivs[8].className === 'player-one') {
+        allDivs[0].className = 'player-one-wins';
+        allDivs[4].className = 'player-one-wins';
+        allDivs[8].className = 'player-one-wins';
+    } else if (allDivs[2].className === 'player-one' && allDivs[4].className === 'player-one' && allDivs[6].className === 'player-one') {
+        allDivs[2].className = 'player-one-wins';
+        allDivs[4].className = 'player-one-wins';
+        allDivs[6].className = 'player-one-wins';
     }
 
 
-    if (divOne.className === 'make-blue' && divTwo.className === 'make-blue' && divThree.className === 'make-blue') {
-        divOne.className = 'make-green';
-        divTwo.className = 'make-green';
-        divThree.className = 'make-green';
-    } else if (divFour.className === 'make-blue' && divFive.className === 'make-blue' && divSix.className === 'make-blue') {
-        divFour.className = 'make-green';
-        divFive.className = 'make-green';
-        divSix.className = 'make-green';
-    } else if (divSeven.className === 'make-blue' && divEight.className === 'make-blue' && divNine.className === 'make-blue') {
-        divSeven.className = 'make-green';
-        divEight.className = 'make-green';
-        divNine.className = 'make-green';
-    } else if (divOne.className === 'make-blue' && divFour.className === 'make-blue' && divSeven.className === 'make-blue') {
-        divOne.className = 'make-green';
-        divFour.className = 'make-green';
-        divSeven.className = 'make-green';
-    } else if (divTwo.className === 'make-blue' && divFive.className === 'make-blue' && divEight.className === 'make-blue') {
-        divTwo.className = 'make-green';
-        divFive.className = 'make-green';
-        divEight.className = 'make-green';
-    } else if (divThree.className === 'make-blue' && divSix.className === 'make-blue' && divNine.className === 'make-blue') {
-        divThree.className = 'make-green';
-        divSix.className = 'make-green';
-        divNine.className = 'make-green';
-    } else if (divOne.className === 'make-blue' && divFive.className === 'make-blue' && divNine.className === 'make-blue') {
-        divOne.className = 'make-green';
-        divFive.className = 'make-green';
-        divNine.className = 'make-green';
-    } else if (divThree.className === 'make-blue' && divFive.className === 'make-blue' && divSeven.className === 'make-blue') {
-        divThree.className = 'make-green';
-        divFive.className = 'make-green';
-        divSeven.className = 'make-green';
+    if (allDivs[0].className === 'player-two' && allDivs[1].className === 'player-two' && allDivs[2].className === 'player-two') {
+        allDivs[0].className = 'player-two-wins';
+        allDivs[1].className = 'player-two-wins';
+        allDivs[2].className = 'player-two-wins';
+    } else if (allDivs[3].className === 'player-two' && allDivs[4].className === 'player-two' && allDivs[5].className === 'player-two') {
+        allDivs[3].className = 'player-two-wins';
+        allDivs[4].className = 'player-two-wins';
+        allDivs[5].className = 'player-two-wins';
+    } else if (allDivs[6].className === 'player-two' && allDivs[7].className === 'player-two' && allDivs[8].className === 'player-two') {
+        allDivs[6].className = 'player-two-wins';
+        allDivs[7].className = 'player-two-wins';
+        allDivs[8].className = 'player-two-wins';
+    } else if (allDivs[0].className === 'player-two' && allDivs[3].className === 'player-two' && allDivs[6].className === 'player-two') {
+        allDivs[0].className = 'player-two-wins';
+        allDivs[3].className = 'player-two-wins';
+        allDivs[6].className = 'player-two-wins';
+    } else if (allDivs[1].className === 'player-two' && allDivs[4].className === 'player-two' && allDivs[7].className === 'player-two') {
+        allDivs[1].className = 'player-two-wins';
+        allDivs[4].className = 'player-two-wins';
+        allDivs[7].className = 'player-two-wins';
+    } else if (allDivs[2].className === 'player-two' && allDivs[5].className === 'player-two' && allDivs[8].className === 'player-two') {
+        allDivs[2].className = 'player-two-wins';
+        allDivs[5].className = 'player-two-wins';
+        allDivs[8].className = 'player-two-wins';
+    } else if (allDivs[0].className === 'player-two' && allDivs[4].className === 'player-two' && allDivs[8].className === 'player-two') {
+        allDivs[0].className = 'player-two-wins';
+        allDivs[4].className = 'player-two-wins';
+        allDivs[8].className = 'player-two-wins';
+    } else if (allDivs[2].className === 'player-two' && allDivs[4].className === 'player-two' && allDivs[6].className === 'player-two') {
+        allDivs[2].className = 'player-two-wins';
+        allDivs[4].className = 'player-two-wins';
+        allDivs[6].className = 'player-two-wins';
     }
 })
