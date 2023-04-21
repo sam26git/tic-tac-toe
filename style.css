@@ -1,3 +1,4 @@
+/* universal styling */
 * {
     box-sizing: border-box;
     /* border: 1px solid red; */
@@ -15,12 +16,14 @@ div {
     border: 1px solid black;
 }
 
+
+/* player win background colour styling */
 .player-one-wins {
-    background-color: red;
+    background-color: green;
 }
 
 .player-two-wins {
-    background-color: purple;
+    background-color: green;
 }
 
 
@@ -38,8 +41,8 @@ h2 {
     display: flex;
 }
 
-/* x & o stying */
 
+/* X & O stying */
 div {
     display: flex;
     align-items: center;

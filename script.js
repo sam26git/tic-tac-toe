@@ -27,16 +27,14 @@ submitPlayerTwoName.addEventListener('click', function(event) {
 });
 
 
-
-
 // var storing the main tag (divs container)
 // counter variable to keep track of player turn
+// vars for player X and player O, all the divs and announcing winner
 // event listener to listen for a click on mainTag
 // event.target to target a single div
 // if the tagNamae is 'DIV' && tile not clicked on before continue
 // if playerTurn counter modulo 2 === 0 it's player 1 turn else player 2 turn
 // increase counter variable to change turn after a click
-
 var mainTag = document.querySelector('main');
 var playerTurn = 0;
 var cross = 'X';
@@ -55,9 +53,8 @@ function handleClick(event) {
         playerTurn++;
     }
 
-// var to find all the divs on the page
-// if 3 in a row for specific player that player wins
 
+// if 3 in a row for specific player that player wins
     if (allDivs[0].textContent === cross && allDivs[1].textContent === cross && allDivs[2].textContent === cross) {
         allDivs[0].className = 'player-one-wins';
         allDivs[1].className = 'player-one-wins';
@@ -158,16 +155,36 @@ function handleClick(event) {
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
     }
+
+
+    // keep track of score until page reloaded and announce draw
+    var trackPlayerOneWins = document.querySelector('#track-player-one-wins');
+    var trackPlayerOneDraws = document.querySelector('#track-player-one-draws');
+    var trackPlayerOneLoses = document.querySelector('#track-player-one-loses');
+    var trackPlayerTwoWins = document.querySelector('#track-player-two-wins');
+    var trackPlayerTwoDraws = document.querySelector('#track-player-two-draws');
+    var trackPlayerTwoLoses = document.querySelector('#track-player-two-loses');
+
+    if (playerTurn === 9  && announceWinner.textContent === '') {
+        mainTag.removeEventListener('click', handleClick);
+        announceWinner.textContent = `It was a draw!`;
+        trackPlayerOneDraws.textContent = Number(trackPlayerOneDraws.textContent) + 1;
+        trackPlayerTwoDraws.textContent = Number(trackPlayerTwoDraws.textContent) + 1;
+    } else if (announceWinner.textContent === `Congrats ${playerX.textContent}, you won!`) {
+        trackPlayerOneWins.textContent = Number(trackPlayerOneWins.textContent) + 1;
+        trackPlayerTwoLoses.textContent = Number(trackPlayerTwoLoses.textContent) + 1;
+    } else if (announceWinner.textContent === `Congrats ${playerO.textContent}, you won!`) {
+        trackPlayerTwoWins.textContent = Number(trackPlayerTwoWins.textContent) + 1;
+        trackPlayerOneLoses.textContent = Number(trackPlayerOneLoses.textContent) + 1;
+    }
 }
 
+
+// adding event listener to clicks on the divs
 mainTag.addEventListener('click', handleClick);
 
 
-
-
-
-
-// make a resart game button
+// make a resart game button and keep scores
 var restartBtn = document.querySelector('#restart-btn');
 
 restartBtn.addEventListener('click', function() {
@@ -179,4 +196,3 @@ restartBtn.addEventListener('click', function() {
     mainTag.addEventListener('click', handleClick);
     playerTurn = 0;
 });
-
