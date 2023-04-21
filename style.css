@@ -70,12 +70,11 @@ div {
 }
 
 /* bottom button styling */
-.restart-btn {
-    text-align: center;
-}
-
-.bottom-btn .restart-btn {
+.bottom-btn {
+    display: flex;
+    justify-content: space-evenly;
     margin: 20px;
 }
+
 
 /* footer styling */
