@@ -224,7 +224,9 @@ restartBtn[1].addEventListener('click', function() {
     announceWinner.textContent = '';
     mainTag.addEventListener('click', handleClick);
     playerTurn = 0;
-    playAgainBtn.classList.toggle('hidden');
+    if (!restartBtn[1].classList.contains('hidden')) {
+        playAgainBtn.classList.toggle('hidden');
+    }
 });
 
 

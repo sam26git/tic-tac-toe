@@ -1,18 +1,26 @@
 /* universal styling */
 * {
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
+/* title */
+h1 {
+    font-size: 4rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* table styling */
 main {
     display: grid;
     grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
-    padding: 50px;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
 }
 
 div {
-    height: 200px;
-    width: 100%;
     border: 1px solid black;
 }
 
@@ -39,6 +47,12 @@ h2 {
 
 .player {
     display: flex;
+    justify-content: center;
+}
+
+.player-box {
+    border: 1px solid black;
+    padding: 10px;
 }
 
 
@@ -47,10 +61,21 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
-/* hidden */
+/* hidden styling */
 .hidden {
     display: none;
 }
+
+/* bottom button styling */
+.restart-btn {
+    text-align: center;
+}
+
+.bottom-btn .restart-btn {
+    margin: 20px;
+}
+
+/* footer styling */
