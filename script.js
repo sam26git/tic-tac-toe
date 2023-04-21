@@ -29,7 +29,7 @@ submitPlayerTwoName.addEventListener('click', function(event) {
 
 // var storing the main tag (divs container)
 // counter variable to keep track of player turn
-// vars for player X and player O, all the divs and announcing winner
+// vars for player X and player O, all the divs, announcing winner and play again button.
 // event listener to listen for a click on mainTag
 // event.target to target a single div
 // if the tagNamae is 'DIV' && tile not clicked on before continue
@@ -41,6 +41,7 @@ var cross = 'X';
 var naught = 'O'
 var allDivs = document.querySelectorAll('div');
 var announceWinner = document.querySelector('#announce-winner');
+var playAgainBtn = document.querySelector('.hidden');
 
 function handleClick(event) {
     var singleDiv = event.target;
@@ -61,48 +62,56 @@ function handleClick(event) {
         allDivs[2].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[3].textContent === cross && allDivs[4].textContent === cross && allDivs[5].textContent === cross) {
         allDivs[3].className = 'player-one-wins';
         allDivs[4].className = 'player-one-wins';
         allDivs[5].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[6].textContent === cross && allDivs[7].textContent === cross && allDivs[8].textContent === cross) {
         allDivs[6].className = 'player-one-wins';
         allDivs[7].className = 'player-one-wins';
         allDivs[8].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[0].textContent === cross && allDivs[3].textContent === cross && allDivs[6].textContent === cross) {
         allDivs[0].className = 'player-one-wins';
         allDivs[3].className = 'player-one-wins';
         allDivs[6].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[1].textContent === cross && allDivs[4].textContent === cross && allDivs[7].textContent === cross) {
         allDivs[1].className = 'player-one-wins';
         allDivs[4].className = 'player-one-wins';
         allDivs[7].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[2].textContent === cross && allDivs[5].textContent === cross && allDivs[8].textContent === cross) {
         allDivs[2].className = 'player-one-wins';
         allDivs[5].className = 'player-one-wins';
         allDivs[8].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[0].textContent === cross && allDivs[4].textContent === cross && allDivs[8].textContent === cross) {
         allDivs[0].className = 'player-one-wins';
         allDivs[4].className = 'player-one-wins';
         allDivs[8].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[2].textContent === cross && allDivs[4].textContent === cross && allDivs[6].textContent === cross) {
         allDivs[2].className = 'player-one-wins';
         allDivs[4].className = 'player-one-wins';
         allDivs[6].className = 'player-one-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     }
 
 
@@ -112,48 +121,56 @@ function handleClick(event) {
         allDivs[2].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[3].textContent === naught && allDivs[4].textContent === naught && allDivs[5].textContent === naught) {
         allDivs[3].className = 'player-two-wins';
         allDivs[4].className = 'player-two-wins';
         allDivs[5].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[6].textContent === naught && allDivs[7].textContent === naught && allDivs[8].textContent === naught) {
         allDivs[6].className = 'player-two-wins';
         allDivs[7].className = 'player-two-wins';
         allDivs[8].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[0].textContent === naught && allDivs[3].textContent === naught && allDivs[6].textContent === naught) {
         allDivs[0].className = 'player-two-wins';
         allDivs[3].className = 'player-two-wins';
         allDivs[6].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[1].textContent === naught && allDivs[4].textContent === naught && allDivs[7].textContent === naught) {
         allDivs[1].className = 'player-two-wins';
         allDivs[4].className = 'player-two-wins';
         allDivs[7].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[2].textContent === naught && allDivs[5].textContent === naught && allDivs[8].textContent === naught) {
         allDivs[2].className = 'player-two-wins';
         allDivs[5].className = 'player-two-wins';
         allDivs[8].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[0].textContent === naught && allDivs[4].textContent === naught && allDivs[8].textContent === naught) {
         allDivs[0].className = 'player-two-wins';
         allDivs[4].className = 'player-two-wins';
         allDivs[8].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     } else if (allDivs[2].textContent === naught && allDivs[4].textContent === naught && allDivs[6].textContent === naught) {
         allDivs[2].className = 'player-two-wins';
         allDivs[4].className = 'player-two-wins';
         allDivs[6].className = 'player-two-wins';
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
+        playAgainBtn.classList.toggle('hidden');
     }
 
 
@@ -168,6 +185,7 @@ function handleClick(event) {
     if (playerTurn === 9  && announceWinner.textContent === '') {
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `It was a draw!`;
+        playAgainBtn.classList.toggle('hidden');
         trackPlayerOneDraws.textContent = Number(trackPlayerOneDraws.textContent) + 1;
         trackPlayerTwoDraws.textContent = Number(trackPlayerTwoDraws.textContent) + 1;
     } else if (announceWinner.textContent === `Congrats ${playerX.textContent}, you won!`) {
@@ -185,9 +203,9 @@ mainTag.addEventListener('click', handleClick);
 
 
 // make a resart game button and keep scores
-var restartBtn = document.querySelector('#restart-btn');
+var restartBtn = document.querySelectorAll('.restart-btn');
 
-restartBtn.addEventListener('click', function() {
+restartBtn[0].addEventListener('click', function() {
     for (let i = 0; i < allDivs.length; i++) {
         allDivs[i].textContent = '';
         allDivs[i].className = '';
@@ -195,4 +213,18 @@ restartBtn.addEventListener('click', function() {
     announceWinner.textContent = '';
     mainTag.addEventListener('click', handleClick);
     playerTurn = 0;
+    playAgainBtn.classList.toggle('hidden');
 });
+
+restartBtn[1].addEventListener('click', function() {
+    for (let i = 0; i < allDivs.length; i++) {
+        allDivs[i].textContent = '';
+        allDivs[i].className = '';
+    }
+    announceWinner.textContent = '';
+    mainTag.addEventListener('click', handleClick);
+    playerTurn = 0;
+    playAgainBtn.classList.toggle('hidden');
+});
+
+
