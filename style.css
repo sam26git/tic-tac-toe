@@ -30,3 +30,14 @@ div {
 .player-two-wins {
     background-color: purple;
 }
+
+
+/* players section styling */
+.players-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+}
