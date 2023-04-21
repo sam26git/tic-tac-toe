@@ -66,65 +66,65 @@ function handleClick(event) {
 
 // if 3 in a row for specific player that player wins
     if (allDivs[0].textContent === cross && allDivs[1].textContent === cross && allDivs[2].textContent === cross) {
-        allDivs[0].className = 'player-one-wins';
-        allDivs[1].className = 'player-one-wins';
-        allDivs[2].className = 'player-one-wins';
+        allDivs[0].classList.add('player-one-wins');
+        allDivs[1].classList.add('player-one-wins');
+        allDivs[2].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[3].textContent === cross && allDivs[4].textContent === cross && allDivs[5].textContent === cross) {
-        allDivs[3].className = 'player-one-wins';
-        allDivs[4].className = 'player-one-wins';
-        allDivs[5].className = 'player-one-wins';
+        allDivs[3].classList.add('player-one-wins');
+        allDivs[4].classList.add('player-one-wins');
+        allDivs[5].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[6].textContent === cross && allDivs[7].textContent === cross && allDivs[8].textContent === cross) {
-        allDivs[6].className = 'player-one-wins';
-        allDivs[7].className = 'player-one-wins';
-        allDivs[8].className = 'player-one-wins';
+        allDivs[6].classList.add('player-one-wins');
+        allDivs[7].classList.add('player-one-wins');
+        allDivs[8].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[0].textContent === cross && allDivs[3].textContent === cross && allDivs[6].textContent === cross) {
-        allDivs[0].className = 'player-one-wins';
-        allDivs[3].className = 'player-one-wins';
-        allDivs[6].className = 'player-one-wins';
+        allDivs[0].classList.add('player-one-wins');
+        allDivs[3].classList.add('player-one-wins');
+        allDivs[6].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[1].textContent === cross && allDivs[4].textContent === cross && allDivs[7].textContent === cross) {
-        allDivs[1].className = 'player-one-wins';
-        allDivs[4].className = 'player-one-wins';
-        allDivs[7].className = 'player-one-wins';
+        allDivs[1].classList.add('player-one-wins');
+        allDivs[4].classList.add('player-one-wins');
+        allDivs[7].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[2].textContent === cross && allDivs[5].textContent === cross && allDivs[8].textContent === cross) {
-        allDivs[2].className = 'player-one-wins';
-        allDivs[5].className = 'player-one-wins';
-        allDivs[8].className = 'player-one-wins';
+        allDivs[2].classList.add('player-one-wins');
+        allDivs[5].classList.add('player-one-wins');
+        allDivs[8].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[0].textContent === cross && allDivs[4].textContent === cross && allDivs[8].textContent === cross) {
-        allDivs[0].className = 'player-one-wins';
-        allDivs[4].className = 'player-one-wins';
-        allDivs[8].className = 'player-one-wins';
+        allDivs[0].classList.add('player-one-wins');
+        allDivs[4].classList.add('player-one-wins');
+        allDivs[8].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[2].textContent === cross && allDivs[4].textContent === cross && allDivs[6].textContent === cross) {
-        allDivs[2].className = 'player-one-wins';
-        allDivs[4].className = 'player-one-wins';
-        allDivs[6].className = 'player-one-wins';
+        allDivs[2].classList.add('player-one-wins');
+        allDivs[4].classList.add('player-one-wins');
+        allDivs[6].classList.add('player-one-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerX.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
@@ -133,65 +133,65 @@ function handleClick(event) {
 
 
     if (allDivs[0].textContent === naught && allDivs[1].textContent === naught && allDivs[2].textContent === naught) {
-        allDivs[0].className = 'player-two-wins';
-        allDivs[1].className = 'player-two-wins';
-        allDivs[2].className = 'player-two-wins';
+        allDivs[0].classList.add('player-two-wins');
+        allDivs[1].classList.add('player-two-wins');
+        allDivs[2].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[3].textContent === naught && allDivs[4].textContent === naught && allDivs[5].textContent === naught) {
-        allDivs[3].className = 'player-two-wins';
-        allDivs[4].className = 'player-two-wins';
-        allDivs[5].className = 'player-two-wins';
+        allDivs[3].classList.add('player-two-wins');
+        allDivs[4].classList.add('player-two-wins');
+        allDivs[5].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[6].textContent === naught && allDivs[7].textContent === naught && allDivs[8].textContent === naught) {
-        allDivs[6].className = 'player-two-wins';
-        allDivs[7].className = 'player-two-wins';
-        allDivs[8].className = 'player-two-wins';
+        allDivs[6].classList.add('player-two-wins');
+        allDivs[7].classList.add('player-two-wins');
+        allDivs[8].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[0].textContent === naught && allDivs[3].textContent === naught && allDivs[6].textContent === naught) {
-        allDivs[0].className = 'player-two-wins';
-        allDivs[3].className = 'player-two-wins';
-        allDivs[6].className = 'player-two-wins';
+        allDivs[0].classList.add('player-two-wins');
+        allDivs[3].classList.add('player-two-wins');
+        allDivs[6].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[1].textContent === naught && allDivs[4].textContent === naught && allDivs[7].textContent === naught) {
-        allDivs[1].className = 'player-two-wins';
-        allDivs[4].className = 'player-two-wins';
-        allDivs[7].className = 'player-two-wins';
+        allDivs[1].classList.add('player-two-wins');
+        allDivs[4].classList.add('player-two-wins');
+        allDivs[7].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[2].textContent === naught && allDivs[5].textContent === naught && allDivs[8].textContent === naught) {
-        allDivs[2].className = 'player-two-wins';
-        allDivs[5].className = 'player-two-wins';
-        allDivs[8].className = 'player-two-wins';
+        allDivs[2].classList.add('player-two-wins');
+        allDivs[5].classList.add('player-two-wins');
+        allDivs[8].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[0].textContent === naught && allDivs[4].textContent === naught && allDivs[8].textContent === naught) {
-        allDivs[0].className = 'player-two-wins';
-        allDivs[4].className = 'player-two-wins';
-        allDivs[8].className = 'player-two-wins';
+        allDivs[0].classList.add('player-two-wins');
+        allDivs[4].classList.add('player-two-wins');
+        allDivs[8].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
         restartBtn[1].classList.toggle('hidden');
     } else if (allDivs[2].textContent === naught && allDivs[4].textContent === naught && allDivs[6].textContent === naught) {
-        allDivs[2].className = 'player-two-wins';
-        allDivs[4].className = 'player-two-wins';
-        allDivs[6].className = 'player-two-wins';
+        allDivs[2].classList.add('player-two-wins');
+        allDivs[4].classList.add('player-two-wins');
+        allDivs[6].classList.add('player-two-wins');
         mainTag.removeEventListener('click', handleClick);
         announceWinner.textContent = `Congrats ${playerO.textContent}, you won!`;
         restartBtn[0].classList.toggle('hidden');
@@ -229,7 +229,8 @@ var resetGame = document.querySelector('#reset-game');
 restartBtn[0].addEventListener('click', function() {
     for (let i = 0; i < allDivs.length; i++) {
         allDivs[i].textContent = '';
-        allDivs[i].className = '';
+        allDivs[i].classList.remove('player-one-wins');
+        allDivs[i].classList.remove('player-two-wins');
     }
     announceWinner.textContent = '';
     mainTag.addEventListener('click', handleClick);
@@ -242,7 +243,8 @@ restartBtn[0].addEventListener('click', function() {
 restartBtn[1].addEventListener('click', function() {
     for (let i = 0; i < allDivs.length; i++) {
         allDivs[i].textContent = '';
-        allDivs[i].className = '';
+        allDivs[i].classList.remove('player-one-wins');
+        allDivs[i].classList.remove('player-two-wins');
     }
     announceWinner.textContent = '';
     mainTag.addEventListener('click', handleClick);
@@ -255,7 +257,8 @@ restartBtn[1].addEventListener('click', function() {
 resetGame.addEventListener('click', function() {
     for (let i = 0; i < allDivs.length; i++) {
         allDivs[i].textContent = '';
-        allDivs[i].className = '';
+        allDivs[i].classList.remove('player-one-wins');
+        allDivs[i].classList.remove('player-two-wins');
     }
     announceWinner.textContent = '';
     mainTag.addEventListener('click', handleClick);
