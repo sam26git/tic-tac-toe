@@ -15,14 +15,6 @@ div {
     border: 1px solid black;
 }
 
-.player-one {
-    background-color: orange;
-}
-
-.player-two {
-    background-color: pink;
-}
-
 .player-one-wins {
     background-color: red;
 }
@@ -40,4 +32,17 @@ div {
 
 h2 {
     text-align: center;
+}
+
+.player {
+    display: flex;
+}
+
+/* x & o stying */
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
 }

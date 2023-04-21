@@ -18,7 +18,16 @@
 
     <section class="players-section">
         <section>
-            <h2 id="x">Player 1 (X)</h2>
+            <section class="player">
+                <h2>X -&nbsp;</h2>
+                <h2 id="x">Player 1</h2>
+            </section>
+
+            <section id="player-one-score">
+                <h3>Wins: <span id="player-one-wins">0</span> |
+                    Draws: <span id="player-one-loses">0</span> |
+                    Loses: <span id="player-one-draws">0</span></h3>
+            </section>
 
             <form action="">
                 <input id="player-one-name" type="text" placeholder="player 1...">
@@ -27,13 +36,26 @@
         </section>
         
         <section>
-            <h2 id="o">Player 2 (O)</h2>
+            <section class="player">
+                <h2>O -&nbsp;</h2>
+                <h2 id="o">Player 2</h2>
+            </section>
+
+            <section id="player-two-score">
+                <h3>Wins: <span id="player-two-wins">0</span> |
+                    Draws: <span id="player-two-loses">0</span> |
+                    Loses: <span id="player-two-draws">0</span></h3>
+            </section>
 
             <form action="">
                 <input id="player-two-name" type="text" placeholder="player 2...">
                 <button id="submit-player-two-name">Submit</button>
             </form>
         </section>
+    </section>
+
+    <section>
+        <h2 id="announce-winner"></h2>
     </section>
 
     <main>
@@ -47,6 +69,10 @@
         <div></div>
         <div></div>
     </main>
+
+    <section>
+        <button id="restart-btn">Restart Game</button>
+    </section>
 
     <footer>
         <p>&copy; Me</p>
