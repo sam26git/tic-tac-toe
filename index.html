@@ -9,6 +9,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,59 +23,59 @@
         <h2>Round Number: <span id="round-number">1</span></h2>
     </section>
 
-    <section class="players-section">
-        <section class="player-box">
-            <section class="player">
-                <h2>X -&nbsp;</h2>
-                <h2 id="x">Player 1</h2>
-            </section>
+    <section class="play-again">
+        <h2 id="announce-winner"></h2>
+        <button class="restart-btn hidden">Play again?</button>
+    </section>
 
-            <section id="player-one-score">
-                <h3>Wins: <span id="track-player-one-wins">0</span> |
-                    Draws: <span id="track-player-one-draws">0</span> |
-                    Loses: <span id="track-player-one-loses">0</span></h3>
+    <main>
+        <section class="player-box player-one-box">
+            <section class="player">
+                <h1>X</h1>
+                <h2 id="x">Player 1</h2>
             </section>
 
             <form action="">
                 <input id="player-one-name" type="text" placeholder="player 1...">
                 <button id="submit-player-one-name">Submit</button>
             </form>
+
+            <section id="player-one-score">
+                <h3>Wins: <span id="track-player-one-wins">0</span></h3>
+                <h3>Draws: <span id="track-player-one-draws">0</span></h3>
+                <h3>Loses: <span id="track-player-one-loses">0</span></h3>
+            </section>
+        </section>
+
+        <section class="main">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         
-        <section class="player-box">
+        <section class="player-box player-two-box">
             <section class="player">
-                <h2>O -&nbsp;</h2>
+                <h1>O</h1>
                 <h2 id="o">Player 2</h2>
-            </section>
-
-            <section id="player-two-score">
-                <h3>Wins: <span id="track-player-two-wins">0</span> |
-                    Draws: <span id="track-player-two-draws">0</span> |
-                    Loses: <span id="track-player-two-loses">0</span></h3>
             </section>
 
             <form action="">
                 <input id="player-two-name" type="text" placeholder="player 2...">
                 <button id="submit-player-two-name">Submit</button>
             </form>
+
+            <section id="player-two-score">
+                <h3>Wins: <span id="track-player-two-wins">0</span></h3>
+                <h3>Draws: <span id="track-player-two-draws">0</span></h3>
+                <h3>Loses: <span id="track-player-two-loses">0</span></h3>
+            </section>
         </section>
-    </section>
-
-    <section>
-        <h2 id="announce-winner"></h2>
-        <button class="restart-btn hidden">Play again?</button>
-    </section>
-
-    <main>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </main>
 
     <section class="bottom-btn">

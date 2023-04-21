@@ -1,27 +1,39 @@
 /* universal styling */
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    font-family: 'Sniglet', cursive;
+    /* color: white; */
+}
+
+body {
+    /* background-color: black; */
+    padding-top: 2rem;
 }
 
 /* title */
 h1 {
-    font-size: 4rem;
-    margin: 0 auto;
+    font-size: 6rem;
+    margin: 0;
     text-align: center;
+    font-weight: bold;
 }
 
 /* table styling */
-main {
+.main {
     display: grid;
     grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
-    width: 50%;
+    width: 100%;
     aspect-ratio: 1 / 1;
-    margin: 0 auto;
+    margin: 50px;
 }
 
 div {
     border: 1px solid black;
+}
+
+main {
+    display: flex;
 }
 
 
@@ -36,25 +48,62 @@ div {
 
 
 /* players section styling */
-.players-section {
+/* .players-section {
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-evenly;
+} */
 
 h2 {
     text-align: center;
+    font-size: 2.25rem;
+    margin: 1rem auto;
+    font-weight: bold;
 }
 
-.player {
+h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* .player {
     display: flex;
     justify-content: center;
-}
+} */
 
 .player-box {
-    border: 1px solid black;
-    padding: 10px;
+    border-radius: 100px;
+    padding: 3rem;
+    margin: 1rem;
 }
 
+.player-one-box {
+    background-color: #630436;
+}
+
+.player-two-box {
+    background-color: #016064;
+}
+
+/* form stying */
+/* form {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 2px;
+    border-radius: 5px;
+}
 
 /* X & O stying */
 div {
@@ -74,6 +123,15 @@ div {
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
+}
+
+/* play again button */
+.play-again {
+    text-align: center;
+}
+
+.play-again button {
+    margin-bottom: 20px;
 }
 
 
