@@ -19,18 +19,24 @@ The briefest description of my cool project and why you should all use it.
 
 ## :rocket: Cool tech
 - This project uses HTML, CSS & JS 
-- Keeps track of round numver as well as each players wins, draws & loses
+- Keeps track of round number as well as each players wins, draws & loses
 - Use any name for your player (and get a personalised winning message)
 - Choose to play again after a game, reset the board (we all make mistakes) or reset the game to start all over (without refreshing the page) 
 - Animations (soon)
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
+- Improve responsiveness of web design (works on a standard desktop)
+- 
 
 ## :sob: Lessons learnt
 What I would do differently if I could wind back the clock...
 
 ## :white_check_mark: Future features
-Cool things I would add if i can keep working on this
+Some cool features I would like to add in the future include:
+- Ability to change themes (dark, light, jungle, custom etc.)
+- Option to play against the computer
+- Add customisation options (time limits, board size, player tokens, avatar/picture)
+- Better styling as well as adding animations and transitions
+- Using LocalStorage or SessionStorage
+- Add messages throughout the game depending on user interactions
+- Add sound effects to the game
