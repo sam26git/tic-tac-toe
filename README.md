@@ -34,11 +34,11 @@ Welcome to my version of the absolute classic that is Tic Tac Toe (also known as
 
 ## :scream: Bugs to fix :poop:
 - Improve responsiveness of web design 
-    - Only works well at specific dimensions (table can get distorted or too large)
+    - Only works well at specific dimensions (table can get distorted at small widths or too large at wide widths)
 
 
 ## :sob: Lessons learnt
-If i could go back in time to start this project again I would plan ahead for future features and leave space for them later on. I would also come up with a better system for naming my classes and IDs so that they are shorter, more organised and clearer. I would also spend some more time refactoring my code after completing each step so it doesn't stack up and become overwhelming.
+If I could go back in time to start this project again I would plan ahead for future features and leave space for them later on. I would also come up with a better system for naming my classes and IDs so that they are shorter, more organised and clearer. I would also spend some more time refactoring my code after completing each step so it doesn't stack up and become overwhelming.
 
 
 ## :white_check_mark: Future features
