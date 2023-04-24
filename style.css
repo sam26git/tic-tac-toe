@@ -11,7 +11,8 @@ body {
     padding-top: 2rem;
 }
 
-/* title */
+
+/* title styling */
 h1 {
     font-size: 6rem;
     margin: 0;
@@ -19,18 +20,42 @@ h1 {
     font-weight: bold;
 }
 
-/* table styling */
-.main {
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 1rem auto;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* table layout & styling */
+main {
+    display: flex;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    font-size: 6rem;
+    font-weight: bold;
+    border-radius: 200px;
+}
+
+.table {
     display: grid;
     grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
     width: 100%;
     aspect-ratio: 1 / 1;
     margin: 4rem;
-}
-
-main {
-    display: flex;
-    align-items: center;
 }
 
 .border-top {
@@ -49,7 +74,8 @@ main {
     border-left: none;
 }
 
-/* player win background colour styling */
+
+/* tile background colour on win */
 .player-one-wins {
     background-color: #873260;
 }
@@ -58,19 +84,8 @@ main {
     background-color: #219f9c;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2.25rem;
-    margin: 1rem auto;
-    font-weight: bold;
-}
 
-h3 {
-    font-size: 1.25rem;
-    font-weight: 400;
-    text-align: center;
-}
-
+/* player info layout & styling */
 .player-box {
     display: flex;
     flex-direction: column;
@@ -114,33 +129,8 @@ button {
     border: none;
 }
 
-/* X & O stying */
-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid white;
-    font-size: 6rem;
-    font-weight: bold;
-    border-radius: 200px;
-}
 
-/* hidden styling */
-.hidden {
-    display: none;
-}
-
-/* bottom button styling */
-.bottom-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.bottom-btn button {
-    margin: 4rem;
-}
-
-/* play again button */
+/* button styling */
 .play-again {
     text-align: center;
 }
@@ -158,6 +148,16 @@ div {
     color: black;
 }
 
+.bottom-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-btn button {
+    margin: 4rem;
+}
+
+
 /* footer styling */
 footer {
     margin: 0 auto 3rem 3rem;
@@ -165,4 +165,10 @@ footer {
 
 p {
     margin: 0;
+}
+
+
+/* hide a tag */
+.hidden {
+    display: none;
 }
