@@ -50,3 +50,5 @@ Some cool features I would like to add in the future include:
 - Using LocalStorage or SessionStorage to persist data locally 
 - Add messages throughout the game depending on user interactions
 - Add sound effects to different user actions
+- Who goes first
+- Highlight background on hover

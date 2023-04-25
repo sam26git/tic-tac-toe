@@ -76,17 +76,17 @@ div {
 
 
 /* tile background colour on win */
-.player-one-wins {
+.winner-x {
     background-color: #873260;
 }
 
-.player-two-wins {
+.winner-o {
     background-color: #219f9c;
 }
 
 
 /* player info layout & styling */
-.player-box {
+.player-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,14 +94,6 @@ div {
     border-radius: 100px;
     padding: 2rem;
     margin: 1rem;
-}
-
-.player-one-box {
-    background-color: #873260;
-}
-
-.player-two-box {
-    background-color: #219f9c;
 }
 
 form {
