@@ -35,6 +35,7 @@ Welcome to my version of the absolute classic that is Tic Tac Toe (also known as
 ## :scream: Bugs to fix :poop:
 - Improve responsiveness of web design 
     - Only works well at specific dimensions (table can get distorted at small widths or too large at wide widths)
+- Can't change name while the winning message is displayed or page reloads
 
 
 ## :sob: Lessons learnt
