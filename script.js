@@ -149,7 +149,7 @@ function handleClick(event) {
             announceWinner.textContent = `What a game! You win ${tokenX.textContent}!!`;
             winsX.textContent = Number(winsX.textContent) + 1;
             losesO.textContent = Number(losesO.textContent) + 1;
-        } else if (winner === '0') {
+        } else if (winner === 'o') {
             announceWinner.textContent = `What a game! You win  ${tokenO.textContent}!!`;
             winsO.textContent = Number(winsO.textContent) + 1;
             losesX.textContent = Number(losesX.textContent) + 1;
