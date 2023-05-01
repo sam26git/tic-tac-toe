@@ -2,7 +2,7 @@
 Welcome to my version of the absolute classic that is Tic Tac Toe (also known as naughts and crosses) with some updated styling, personalised names as well as round & score tracking. So why not grab a friend and come have some fun playing my game of Tic Tac Toe! :raised_hands:
 
 
-## :computer: [Click here](https://sam26git.github.io/tic-tac-toe/) to see my live project!
+## :computer: [Click here](https://samueljenkin.github.io/tic-tac-toe/) to see my live project!
 
 
 ## :page_facing_up: About
